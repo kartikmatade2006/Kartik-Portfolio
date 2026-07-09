@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #0D1226;
+  color: #F3EFE4;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #F2A93B;
+  color: #0D1226;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0D1226;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A3260;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F2A93B;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* subtle dotted circuit backdrop */
+.dot-grid {
+  background-image: radial-gradient(rgba(155, 163, 199, 0.18) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #F2A93B, #F7C876 45%, #4FD1C5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glow {
+  transition: box-shadow 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 0 1px rgba(242, 169, 59, 0.35), 0 20px 40px -20px rgba(242, 169, 59, 0.25);
+  transform: translateY(-4px);
+  border-color: rgba(242, 169, 59, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
