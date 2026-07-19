@@ -85,7 +85,7 @@ export default function Projects() {
           {/* Placeholder card hinting the list will keep growing */}
           <Reveal>
             <div className="rounded-2xl border border-dashed border-white/15 p-8 text-center text-ink-faint font-mono text-sm">
-              More projects coming soon.......
+              More projects coming soon.......!
             </div>
           </Reveal>
         </div>
